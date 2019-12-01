@@ -1,0 +1,17 @@
+{
+  "DEBUG": "True",
+  "SECRET_KEY": "vjow6)n2x3crmz*-f_f9hxh&ys5)&&asdasdh98ychbjk3HIUO^&Cguha",
+  "ALLOWED_HOSTS": [
+    "*"
+  ],
+  "DATABASE": {
+    "NAME": "pizzadb",
+    "USER": "dev",
+    "PASSWORD": "",
+    "HOST": "",
+    "PORT": "5432"
+  },
+  "SITE_URL": "",
+  "MEDIA_URL": "SITE_URL",
+  "STATIC_URL": "SITE_URL + 'dev/static/'"
+}

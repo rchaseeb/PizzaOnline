@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    container_name: pizzadatabase
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=pizzadb
+
+    ports:
+      - "5432:5432"
+  web:
+    restart: always
+    image: pizza-web
+    container_name: pizza-app-container
+#    environment:
+#      - ENV=local
+    build: .
+
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    expose:
+      - 8000
+#    entrypoint:
+#      - ./entry_point.sh
+    depends_on:
+      - db
+    command: python /code/manage.py runserver 0.0.0.0:8000
+volumes:
+  postgres_data:

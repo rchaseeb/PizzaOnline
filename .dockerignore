@@ -1,0 +1,32 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/*
+*.pyc
+Ballogy/__pycache__
+Ballogy/__pycache__/*
+ballogyApi/media/*
+src/db.sqlite3
+.idea/
+ballogyApi/media/
+src/media/
+app.sock
+src/static_files/*
+src/celerybeat-schedule
+src/logs/*.log
+*.log
+webPanel/npm-debug.log*
+celerybeat.log
+celerybeat.pid
+celeryd.log
+.venv
+npm-debug.log
+/.project
+.env
+.elasticbeanstalk
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+.git
+.gitignore
+README.md
+src/deploy
