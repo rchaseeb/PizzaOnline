@@ -24,7 +24,7 @@ services:
     volumes:
       - .:/code
     ports:
-      - "8000:8000"
+      - "8282:8000"
     expose:
       - 8000
 #    entrypoint:
