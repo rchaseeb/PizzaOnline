@@ -35,5 +35,3 @@ RUN chmod +x entry_point.sh
 ENV DJANGO_SETTINGS_MODULE='PizzaOnline.settings'
 
 CMD ["./entry_point.sh"]
-
-#EXPOSE 8000
